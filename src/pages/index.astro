@@ -4,7 +4,8 @@ import '../styles/global.scss';
 import '../styles/Home.scss';
 import '../styles/fontawesome.all.min.css';
 import Nav from '../components/Nav.astro';
-let title = 'Pukima\' Personal Website';
+import ParallaxEffect from '../components/Parallax.jsx';
+let title = 'Pukima\'s Personal Website';
 ---
 <html dir="ltr" lang="en">
 <head>
@@ -16,13 +17,17 @@ let title = 'Pukima\' Personal Website';
 <body>
 	<main>
 		<Nav />
-		<div class="home-card">
-			<h1 style="font-size: 3.5rem">Pukima</h1>
-			<p>Heya! I am Pukima (also called Jaron irl) and I am a developer and photographer based in Northern Germany.</p>
-			<div class="social-icons">
-				<a href="https://tiktok.com/@punkima" target="_blank" rel="norefferer" class="social tiktok"><i class="fa-brands fa-tiktok" title="punkima" alt="TikTok" /></a>
-				<a href="https://discord.com/users/751092600890458203" target="_blank" rel="norefferer" class="social discord"><i class="fa-brands fa-discord" title="Pukima#7331" alt="Discord" /></a>
+		<div style="overflow: hidden;">
+			<div class="home-card">
+				<h1 style="font-size: 3.5rem">Pukima</h1>
+				<p>Heya! I am Pukima (also called Jaron irl) and I am a developer and photographer based in Northern Germany.</p>
+				<div class="social-icons">
+					<a href="https://tiktok.com/@punkima" target="_blank" rel="norefferer" class="social tiktok"><i class="fa-brands fa-tiktok" title="punkima" alt="TikTok" /></a>
+					<a href="https://discord.com/users/751092600890458203" target="_blank" rel="norefferer" class="social discord"><i class="fa-brands fa-discord" title="Pukima#7331" alt="Discord" /></a>
+					<a href="https://github.com/Pukimaa" target="_blank" rel="norefferer" class="social github"><i class="fa-brands fa-github-alt" title="Pukimaa" alt="Github" /></a>
+				</div>
 			</div>
+			<ParallaxEffect client:load />
 		</div>
 	</main>
 </body>

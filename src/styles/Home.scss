@@ -2,16 +2,12 @@
 $social-color: #0e132c;
 $tiktok: #b19cd9;
 $discord: #a7b9ff;
+$github: #dadada;
 
-@media screen and (max-device-width: 800px) {
+
+@media screen and (max-device-width: 1000px) {
     .home-card {
         width: 75% !important;
-    }
-}
-
-@media screen and (max-device-width: 640px) {
-    .home-card > p {
-        font-size: 2.25rem !important;
     }
 }
 
@@ -20,23 +16,20 @@ $discord: #a7b9ff;
         & > p {
             font-size: 2rem !important;
         }
-
-        & > h1 {
-            font-size: 2rem !important;
-        }
     }
 }
 
 .home-card {
     position: absolute;
-    width: 50%;
-    height: 450px;
+    width: 35%;
+    height: 500px;
     max-height: 95vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: v.$sec-background;
     border-radius: v.$border-radius;
+    z-index: 1;
 
     & > h1, p {
         text-align: center;
@@ -80,8 +73,16 @@ $discord: #a7b9ff;
             &.discord {
                 background-color: $discord;
             }
+
+            &.github {
+                background-color: $github;
+            }
         }
     }
+}
+
+.scene {
+    position: relative;
 }
 
 @keyframes float {
