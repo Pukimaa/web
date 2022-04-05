@@ -1,0 +1,97 @@
+@use '_variables' as v;
+$social-color: #0e132c;
+$tiktok: #b19cd9;
+$discord: #a7b9ff;
+
+@media screen and (max-device-width: 800px) {
+    .home-card {
+        width: 75% !important;
+    }
+}
+
+@media screen and (max-device-width: 640px) {
+    .home-card > p {
+        font-size: 2.25rem !important;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .home-card {
+        & > p {
+            font-size: 2rem !important;
+        }
+
+        & > h1 {
+            font-size: 2rem !important;
+        }
+    }
+}
+
+.home-card {
+    position: absolute;
+    width: 50%;
+    height: 450px;
+    max-height: 95vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: v.$sec-background;
+    border-radius: v.$border-radius;
+
+    & > h1, p {
+        text-align: center;
+    }
+
+    & > p {
+        font-size: 2.5rem;
+        padding: 0 v.$spacing 0 v.$spacing;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > a {
+            color: $social-color;
+            
+            &:hover {
+                animation: float infinite 2s ease-in-out;
+            }
+
+            & > i {
+                font-size: 2rem;
+                margin-left: 50%;
+                margin-top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        & > .social {
+            border-radius: v.$border-radius;
+            height: 50px;
+            width: 50px;
+            margin: 0 4px 0 4px;
+
+            &.tiktok {
+                background-color: $tiktok;
+            }
+
+            &.discord {
+                background-color: $discord;
+            }
+        }
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

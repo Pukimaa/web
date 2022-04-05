@@ -1,0 +1,23 @@
+@use '_variables' as v;
+@use 'fonts';
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background-color: v.$background;
+}
+
+p {
+	color: v.$foreground;
+}
+
+
+h1 {
+	font-family: 'Nunito';
+	font-weight: 600;
+	color: v.$foreground-light
+}
+
+p {
+	font-family: "Pukima' Handwriting 2022";
+}
