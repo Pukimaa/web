@@ -8,8 +8,8 @@ export default function ParallaxEffect() {
     }, []);
 
     return (
-        <div id="scene" className="scene" style={{marginLeft: "20%"}}>
-            <img data-depth="1" src="/assets/ParallaxBackground.png" style={{height: "calc(100vh - 96px)", width: "auto"}} />
+        <div id="scene">
+            <div data-depth="1" className="parallax" />
         </div>
     );
 };

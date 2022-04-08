@@ -1,35 +1,51 @@
 @use '_variables' as v;
 $social-color: #0e132c;
 $tiktok: #b19cd9;
-$discord: #a7b9ff;
+$twitter: #97d5ff;
 $github: #dadada;
+$discord: #a7b9ff;
 
-
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-device-width: 1500px) {
     .home-card {
         width: 75% !important;
     }
 }
 
-@media screen and (max-device-width: 500px) {
+@media screen and (max-device-width: 600px) {
     .home-card {
+        margin-top: 2.5rem;
+        width: 95% !important;
+
         & > p {
             font-size: 2rem !important;
         }
     }
 }
 
+@media (prefers-reduced-motion) {
+    .home-card .social-icons > .social:hover {
+        animation-name: none !important;
+    }
+}
+
+.fade-in {
+    animation: fade-in 3s ease 0s 1 normal none;
+}
+
 .home-card {
     position: absolute;
+    overflow: auto;
     width: 35%;
-    height: 500px;
+    height: 550px;
     max-height: 95vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: v.$sec-background;
     border-radius: v.$border-radius;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 25%);
     z-index: 1;
+    animation: flip-in-ver-left 2s ease 0s 1 normal none;
 
     & > h1, p {
         text-align: center;
@@ -40,14 +56,23 @@ $github: #dadada;
         padding: 0 v.$spacing 0 v.$spacing;
     }
     
-    .social-icons {
+    .home-links {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        & > a {
+        & > .social {
             color: $social-color;
-            
+            border-radius: v.$border-radius;
+            height: 50px;
+            width: 50px;
+            margin: 0 4px 0 4px;
+
+            & > [astro-icon] {
+                height: 2.25rem;
+                margin-top: .5rem;
+            }
+
             &:hover {
                 animation: float infinite 2s ease-in-out;
             }
@@ -58,31 +83,38 @@ $github: #dadada;
                 margin-top: 50%;
                 transform: translate(-50%, -50%);
             }
-        }
-
-        & > .social {
-            border-radius: v.$border-radius;
-            height: 50px;
-            width: 50px;
-            margin: 0 4px 0 4px;
 
             &.tiktok {
                 background-color: $tiktok;
             }
 
-            &.discord {
-                background-color: $discord;
+            &.twitter {
+                background-color: $twitter;
             }
 
             &.github {
                 background-color: $github;
             }
+
+            &.discord {
+                background-color: $discord;
+            }
         }
     }
 }
 
-.scene {
-    position: relative;
+a[href="/projects"] {
+    position: absolute;
+    margin: v.$spacing 0 v.$spacing -3rem;
+}
+
+.parallax {
+    height: calc(100vh - 96px);
+    width: 100%;
+    background: url('/assets/ParallaxBackground.png');
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center;
 }
 
 @keyframes float {
@@ -94,5 +126,30 @@ $github: #dadada;
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes flip-in-ver-left {
+    0%{
+      transform: rotateY(80deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+    100%{
+      transform: rotateY(0) translate(-50%, -50%);
+      opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }

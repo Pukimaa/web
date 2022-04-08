@@ -1,0 +1,23 @@
+---
+import '../styles/global.scss';
+import '../styles/projects.scss';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = "Projects - Pukima's Personal Website";
+---
+<BaseLayout title={title}>
+    <div class="project-container">
+        <img src="/assets/projects/kayano.png" class="project-image" />
+        <h1>Kayano</h1>
+        <p>A revolutionary Discord bot that aims to have everything needed at some point.<br />
+           It's currently in early alpha but you can already follow the development as it is open-source.</p>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=878366398269771847&permissions=1100317322295&scope=applications.commands%20bot" target="_blank" rel="norefferer" class="a-button">Invite</a>
+        <a href="https://github.com/kayano-bot/kayano" target="_blank" rel="norefferer" class="a_nother-button">Github</a>
+    </div>
+    <div class="project-container">
+        <img src="/assets/projects/phoenix.png" class="project-image" />
+        <h1>Phoenix (Discord)</h1>
+        <p>Phoenix is a color palette I created. Since I am not actively working on it there is just a Discord Theme for now.<br />
+           You can install a Discord Client Mod (BetterDiscord, Powercord, GooseMod etc.) and then you are able to install this theme too.</p>
+        <a href="https://github.com/PhoenixColors/phoenix-discord" target="_blank" rel="noreffer" class="a-button">Github</a>
+    </div>
+</BaseLayout>

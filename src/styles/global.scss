@@ -1,23 +1,69 @@
 @use '_variables' as v;
 @use 'fonts';
 
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+	background-color: v.$background;
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+	height: 30px;
+	background-color: v.$sec-background;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	min-height: 100vh;
 	background-color: v.$background;
+	text-align: center;
 }
 
-p {
+p, a {
+	font-family: "Pukima' Handwriting 2022";
 	color: v.$foreground;
+	font-size: 1.75rem;
+	max-width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nunito';
 	font-weight: 600;
 	color: v.$foreground-light
 }
 
-p {
-	font-family: "Pukima' Handwriting 2022";
+.a-button {
+	padding: .75rem;
+	color: v.$background;
+	text-decoration: none;
+	background-color: v.$accent;
+	border-radius: v.$border-radius;
+	transition: background-color 0.2s ease-in-out;
+
+	&:hover {
+		background-color: v.$light-accent;
+	}
+}
+
+.a_nother-button {
+	padding: .75rem;
+	color: v.$background;
+	text-decoration: none;
+	background-color: #dadada;
+	border-radius: v.$border-radius;
+	transition: background-color 0.2s ease-in-out;
+
+	&:hover {
+		background-color: #eee;
+	}
 }

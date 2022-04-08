@@ -1,0 +1,31 @@
+---
+import '../styles/global.scss';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = "404 - Page not found";
+---
+<BaseLayout title={title}>
+    <style>
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1, h2, p {
+            margin-top: .75rem;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 2.5rem;
+        }
+    </style>
+    <div class="container">
+        <p>Oopsie!</p>
+        <h1>404</h1>
+        <h2>Page not found.</h2>
+        <br /><br />
+        <a class="a-button" href="/">Go Home</a> 
+    </div>
+</BaseLayout>

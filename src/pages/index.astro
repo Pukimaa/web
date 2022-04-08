@@ -2,33 +2,25 @@
 // Style Imports
 import '../styles/global.scss';
 import '../styles/Home.scss';
-import '../styles/fontawesome.all.min.css';
-import Nav from '../components/Nav.astro';
+import { Icon } from 'astro-icon';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import ParallaxEffect from '../components/Parallax.jsx';
 let title = 'Pukima\'s Personal Website';
+let description = 'The personal website of Pukima, a software developer and photographer based in Kiel, Northern Germany.';
 ---
-<html dir="ltr" lang="en">
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{title}</title>
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-</head>
-<body>
-	<main>
-		<Nav />
-		<div style="overflow: hidden;">
-			<div class="home-card">
-				<h1 style="font-size: 3.5rem">Pukima</h1>
-				<p>Heya! I am Pukima (also called Jaron irl) and I am a developer and photographer based in Northern Germany.</p>
-				<div class="social-icons">
-					<a href="https://tiktok.com/@punkima" target="_blank" rel="norefferer" class="social tiktok"><i class="fa-brands fa-tiktok" title="punkima" alt="TikTok" /></a>
-					<a href="https://discord.com/users/751092600890458203" target="_blank" rel="norefferer" class="social discord"><i class="fa-brands fa-discord" title="Pukima#7331" alt="Discord" /></a>
-					<a href="https://github.com/Pukimaa" target="_blank" rel="norefferer" class="social github"><i class="fa-brands fa-github-alt" title="Pukimaa" alt="Github" /></a>
-				</div>
+<BaseLayout title={title} description={description}>
+	<div style="overflow: hidden;">
+		<div class="home-card">
+			<h1 class="fade-in" style="font-size: 3.5rem">Pukima</h1>
+			<p class="fade-in">Heya! I am Pukima (also called Jaron irl) and I am a developer and photographer based in Northern Germany.</p>
+			<div class="home-links fade-in">
+				<a href="https://tiktok.com/@punkima" target="_blank" rel="norefferer" class="social tiktok"><Icon name="fa-brands:tiktok" /></a>
+				<a href="https://twitter.com/yungtraubensaft" target="_blank" rel="norefferer" class="social twitter"><Icon name="fa-brands:twitter" /></a>
+				<a href="https://github.com/Pukimaa" target="_blank" rel="norefferer" class="social github"><Icon name="fa-brands:github-alt" /></a>
+				<a href="https://discord.com/users/751092600890458203" target="_blank" rel="norefferer" class="social discord"><Icon name="fa-brands:discord" /></a>
 			</div>
-			<ParallaxEffect client:load />
+			<a href="/projects" class="fade-in a-button">Projects</a>
 		</div>
-	</main>
-</body>
-</html>
+		<ParallaxEffect client:load />
+	</div>
+</BaseLayout>
