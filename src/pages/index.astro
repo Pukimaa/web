@@ -5,8 +5,8 @@ import '../styles/Home.scss';
 import { Icon } from 'astro-icon';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ParallaxEffect from '../components/Parallax.jsx';
-let title = 'Pukima\'s Personal Website';
-let description = 'The personal website of Pukima, a software developer and photographer based in Kiel, Northern Germany.';
+let title = 'Home';
+let description = 'The personal website of Pukima, a software developer and photographer based in Kiel, Northern Germany. Here you can find everything about him.';
 ---
 <BaseLayout title={title} description={description}>
 	<div style="overflow: hidden;">
@@ -15,11 +15,10 @@ let description = 'The personal website of Pukima, a software developer and phot
 			<p class="fade-in">Heya! I am Pukima (also called Jaron irl) and I am a developer and photographer based in Northern Germany.</p>
 			<div class="home-links fade-in">
 				<a href="https://tiktok.com/@punkima" target="_blank" rel="norefferer" class="social tiktok"><Icon name="fa-brands:tiktok" /></a>
-				<a href="https://twitter.com/yungtraubensaft" target="_blank" rel="norefferer" class="social twitter"><Icon name="fa-brands:twitter" /></a>
+				<a href="https://twitter.com/pukimaaa" target="_blank" rel="norefferer" class="social twitter"><Icon name="fa-brands:twitter" /></a>
 				<a href="https://github.com/Pukimaa" target="_blank" rel="norefferer" class="social github"><Icon name="fa-brands:github-alt" /></a>
 				<a href="https://discord.com/users/751092600890458203" target="_blank" rel="norefferer" class="social discord"><Icon name="fa-brands:discord" /></a>
 			</div>
-			<a href="/projects" class="fade-in a-button">Projects</a>
 		</div>
 		<ParallaxEffect client:load />
 	</div>

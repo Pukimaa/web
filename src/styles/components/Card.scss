@@ -1,6 +1,6 @@
-@import '_variables';
+@import '../_variables.scss';
 
-.project-container {
+.card-container {
     background-color: $sec-background;
     border-radius: $border-radius;
     margin: 2rem auto 2rem auto;
@@ -19,7 +19,7 @@
         margin: .5rem auto 2rem auto;
     }
 
-    & > .project-image {
+    & > .card-image {
         margin-top: 2rem;
         height: 128px;
         width: auto;
@@ -33,4 +33,19 @@
     & > a:last-child {
         margin-bottom: 2rem;
     }
+}
+
+.post {
+    h3 { margin: 1rem 0 0 0 }
+    .date { font-size: 1rem; color: #bbb; font-family: 'Nunito'; }
+    p { margin-bottom: 0 }
+    a { margin-top: 1rem }
+}
+
+.post-image {
+    width: 500px;
+    height: auto;
+    max-width: 95%;
+    margin-top: 1.5rem;
+    border-radius: $border-radius;
 }

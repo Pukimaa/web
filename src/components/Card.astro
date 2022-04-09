@@ -1,0 +1,15 @@
+---
+import XElement from "astro-xelement";
+import '../styles/components/Card.scss';
+const { image, title, description } = Astro.props;
+---
+<XElement @visible:once={(event) => {
+    event.target.animate({ opacity: [0, 1] }, 1000); 
+}}>
+<div class="card-container">
+        <img src={image} class="card-image" />
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <slot />
+</div>
+</XElement>

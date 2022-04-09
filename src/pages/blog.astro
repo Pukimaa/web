@@ -1,16 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { Markdown } from 'astro/components'
-let allPosts = await Astro.glob('../pages/blog/*.md');
-allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+import PostCard from '../components/PostCard.astro';
+allPosts = await Astro.glob('../pages/blog/*.md');
+allPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
 ---
-<BaseLayout>
-{allPosts.slice(0, 5).map((post) => (
-<article>
-    <a href={post.url}><h3>{post.frontmatter.title}</h3></a>
-    <p>{post.frontmatter.description}</p>
-    <p>{new Date(post.frontmatter.date).toISOString().slice(0, 10)}</p>
-    <a href={post.url} class="a-button">Read more</a>
-</article>
-))}
+<BaseLayout title="Blog" description="Look at all Blog Posts from Pukima">
+    <h1>Blog</h1>
+    {allPosts.slice(0, 5).map((post) => (
+        <PostCard url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} date={post.frontmatter.date} image={post.frontmatter.image} />
+    ))}
 </BaseLayout>

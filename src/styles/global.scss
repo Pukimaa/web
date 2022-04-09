@@ -35,11 +35,49 @@ p, a {
 	margin-right: auto;
 }
 
+a:hover {
+	color: #dadada;
+	text-decoration: none;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nunito';
 	font-weight: 600;
 	color: v.$foreground-light
+}
+
+code {
+	position: relative;
+	font-size: 1rem;
+	background-color: v.$sec-background;
+	padding: 3px;
+	border-radius: 3px;
+	bottom: .25rem;
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        animation-name: none !important;
+    }
+}
+
+.fade-in {
+    animation: fade-in 3s ease-in-out 0s 1 normal none;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .a-button {
@@ -51,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: background-color 0.2s ease-in-out;
 
 	&:hover {
+		color: v.$background;
 		background-color: v.$light-accent;
 	}
 }
@@ -64,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: background-color 0.2s ease-in-out;
 
 	&:hover {
+		color: v.$background;
 		background-color: #eee;
 	}
 }

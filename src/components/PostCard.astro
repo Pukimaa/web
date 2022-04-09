@@ -1,0 +1,17 @@
+---
+// Thanks a lot to RafidMuhymin for helping me with this
+import XElement from "astro-xelement";
+import '../styles/components/Card.scss';
+const { url, title, description, date, image } = Astro.props;
+---
+<XElement @visible:once={(event) => {
+    event.target.animate({ opacity: [0, 1] }, 1000); 
+}}>
+<div class="card-container post">
+    <img class="post-image" src={image} />
+    <a href={url}><h3>{title}</h3></a>
+    <p class="date">{new Date(date).toISOString().slice(0, 10)}</p>
+    <p>{description}</p>
+    <a href={url} class="a-button">Read more</a>
+</div>
+</XElement>

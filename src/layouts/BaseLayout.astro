@@ -9,11 +9,13 @@ const { title, description } = Astro.props;
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <SEO
-        title={title}
-        description={description}
-      />
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <SEO
+      title={title + " - Pukima's Personal Website"}
+      description={description}
+      extend={{
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+      }}
+    />
   </head>
   <body>
       <Nav />

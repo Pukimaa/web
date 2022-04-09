@@ -610,10 +610,15 @@ astro-seo@^0.5.0:
   resolved "https://registry.yarnpkg.com/astro-seo/-/astro-seo-0.5.0.tgz#4e2a86f09fb248480e4213e6d8d828de76f4c8c3"
   integrity sha512-2J1QBtoDIKb1bTCc+vpT0c73oXSFh/WZ+cwSGsQ5SCdNLDpMp/qefeeQkCcsqEVICLsyYVgt5VwxSmopHaq55A==
 
-astro@^1.0.0-beta.0:
-  version "1.0.0-beta.0"
-  resolved "https://registry.npmjs.org/astro/-/astro-1.0.0-beta.0.tgz"
-  integrity sha512-6gcWoC7ZOwfuU7/nX1FV6YgYK0SVS0GQlsXCYlovqdwi8d0jqmw2W+2wpo7o1b9rYw45NpXGluwOiTXQIEqgGw==
+astro-xelement@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/astro-xelement/-/astro-xelement-3.2.0.tgz#03db9a6ffc215331244f1fc7db25b08cadd6f906"
+  integrity sha512-uzy2z/Yaoz822qXppXawkomc074g3K0+0iGgqOEdwzlOJrj9ne4+BEVh6HWHo5fjEZHy7UcXk5IDGw+pfVaR2w==
+
+astro@^1.0.0-beta.5:
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.0.0-beta.5.tgz#bc032d3f015f33081b2618a4a5b5b1e5c6ef0c42"
+  integrity sha512-BzAsTPg+2VwmchtUkv9LthX7LVDq+sgLTzk5U3XfXqy6wTtexJ/RT99rC3Q2a4TyZqxm+Y/69i7fWmsdvf6p5A==
   dependencies:
     "@astrojs/compiler" "^0.14.1"
     "@astrojs/language-server" "^0.13.3"

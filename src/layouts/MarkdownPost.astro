@@ -1,0 +1,36 @@
+---
+import Nav from '../components/Nav.astro';
+import '../styles/global.scss';
+import '../styles/Post.scss';
+
+import { SEO } from "astro-seo";
+const { content } = Astro.props;
+---
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <SEO
+      title={content.title + " - Pukima's Blog"}
+      description={content.description}
+      extend={{
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        meta: [
+            { name: "twitter:image", content: content.image },
+            { name: "twitter:title", content: content.title },
+            { name: "twitter:description", content: content.description },
+        ]
+      }}
+    />
+  </head>
+  <body>
+      <Nav />
+      <main>
+        <img src={content.image} />
+        <h1>{content.title}</h1>
+        <p class="date">Written on {content.date}</p>
+        <slot/>
+      </main>
+  </body>
+</html>
+
