@@ -1,4 +1,4 @@
-import Parallax from "parallax-js";
+import Parallax from 'parallax-js';
 import { useEffect } from 'react';
 
 export default function ParallaxEffect() {

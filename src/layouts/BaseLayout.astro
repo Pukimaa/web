@@ -2,7 +2,8 @@
 import Nav from '../components/Nav.astro';
 import '../styles/global.scss';
 
-import { SEO } from "astro-seo";
+import { SEO } from 'astro-seo';
+import { Plausible } from 'astro-analytics';
 const { title, description } = Astro.props;
 ---
 <html dir="ltr" lang="en">
@@ -16,7 +17,7 @@ const { title, description } = Astro.props;
         link: [{ rel: "icon", href: "/favicon.ico" }],
       }}
     />
-    <script defer data-domain="pukima.site" src="https://stats.pukima.site/js/plausible.js"></script>
+    <Plausible domain="pukima.site" src="https://stats.pukima.site/js/plausible.js" />
   </head>
   <body>
       <Nav />
