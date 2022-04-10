@@ -1,12 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
+import CardWrapper from '../components/CardWrapper.astro'
 const allPosts = await Astro.glob('../pages/blog/*.md');
 allPosts.sort((a, b) => +new Date(b.frontmatter.date) - +new Date(a.frontmatter.date));
 ---
 <BaseLayout title="Blog" description="Look at all Blog Posts from Pukima">
     <h1>Blog</h1>
+    <CardWrapper>
     {allPosts.slice(0, 5).map((post) => (
         <PostCard url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} date={post.frontmatter.date} image={post.frontmatter.image} />
     ))}
+    </CardWrapper>
 </BaseLayout>

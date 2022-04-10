@@ -1,43 +1,23 @@
-# Welcome to [Astro](https://astro.build)
+# <img src="public/favicon.ico" height="32px" alt="🌐" /> [Pukima's Personal Website](https://pukima.site)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/starter)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+This is the source-code of my own little personal website that was built using [Astro](https://astro.build)!
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
+| Command            | Action                                       |
+| :----------------- | :------------------------------------------- |
+| `yarm`             | Installs dependencies                        |
+| `yarn run dev`     | Starts local dev server at `localhost:3000`  |
+| `yarn run build`   | Build your production site to `./dist/`      |
+| `yarn run preview` | Preview your build locally, before deploying |
+| `yarn run preview` | Preview your build locally, before deploying |
+| `yarn run format`  | Format the code using Prettier               |
 
-## 👀 Want to learn more?
+## ❤️ Credits
 
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+Thanks a lot to all the people helping me out in the [Astro Discord Server](https://astro.build/chat)...especially:
+
+- Lostra (for creating the fade in logic for Blog Posts and Project Cards)
+- [RafidMuhymin](https://github.com/RafidMuhymin) (for helping me with a lot of things)
