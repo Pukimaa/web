@@ -1,110 +1,115 @@
-@use '_variables' as v;
-@use 'fonts';
+@use "_variables" as v;
+@use "fonts";
 
 ::-webkit-scrollbar {
-	width: 12px;
-	height: 12px;
-  }
-  
-  ::-webkit-scrollbar-track-piece {
-	background-color: v.$background;
-  }
-  
-  ::-webkit-scrollbar-thumb:vertical {
-	height: 30px;
-	background-color: v.$sec-background;
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: v.$background;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: v.$sec-background;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	margin: 0;
-	min-height: 100vh;
-	background-color: v.$background;
-	text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: v.$background;
+  text-align: center;
 }
 
-p, a {
-	font-family: "Nunito", sans-serif;
-	color: v.$foreground;
-	font-size: 1.25rem;
-	max-width: 75%;
-	margin-left: auto;
-	margin-right: auto;
+p,
+a {
+  font-family: "Nunito", sans-serif;
+  color: v.$foreground;
+  font-size: 1.25rem;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a:hover {
-	color: #dadada;
-	text-decoration: none;
+  color: #dadada;
+  text-decoration: none;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Pukima\'s Handwriting 2022';
-	font-weight: 600;
-	font-size: 2.25rem;
-	color: v.$foreground-light
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pukima's Handwriting 2022";
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: v.$foreground-light;
 }
 
 code {
-	position: relative;
-	font-size: 1rem;
-	background-color: v.$sec-background;
-	padding: 3px;
-	border-radius: 3px;
-	bottom: .25rem;
+  position: relative;
+  font-size: 1rem;
+  background-color: v.$sec-background;
+  padding: 3px;
+  border-radius: 3px;
+  bottom: 0.25rem;
 }
 
 @media (prefers-reduced-motion) {
-    * {
-        animation-name: none !important;
-    }
+  * {
+    animation-name: none !important;
+  }
 }
 
 .fade-in {
-    animation: fade-in 3s ease-in-out 0s 1 normal none;
+  animation: fade-in 3s ease-in-out 0s 1 normal none;
 }
 
 @keyframes fade-in {
-    0% {
-        opacity: 0%;
-    }
+  0% {
+    opacity: 0%;
+  }
 
-    50% {
-        opacity: 0%;
-    }
+  50% {
+    opacity: 0%;
+  }
 
-    100% {
-        opacity: 100%;
-    }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .a-button {
-	padding: .75rem;
-	color: v.$background;
-	text-decoration: none;
-	background-color: v.$accent;
-	border-radius: v.$border-radius;
-	transition: background-color 0.2s ease-in-out;
+  padding: 0.75rem;
+  color: v.$background;
+  text-decoration: none;
+  background-color: v.$accent;
+  border-radius: v.$border-radius;
+  transition: background-color 0.2s ease-in-out;
 
-	&:hover {
-		color: v.$background;
-		background-color: v.$light-accent;
-	}
+  &:hover {
+    color: v.$background;
+    background-color: v.$light-accent;
+  }
 }
 
 .a_nother-button {
-	padding: .75rem;
-	color: v.$background;
-	text-decoration: none;
-	background-color: #dadada;
-	border-radius: v.$border-radius;
-	transition: background-color 0.2s ease-in-out;
+  padding: 0.75rem;
+  color: v.$background;
+  text-decoration: none;
+  background-color: #dadada;
+  border-radius: v.$border-radius;
+  transition: background-color 0.2s ease-in-out;
 
-	&:hover {
-		color: v.$background;
-		background-color: #eee;
-	}
+  &:hover {
+    color: v.$background;
+    background-color: #eee;
+  }
 }

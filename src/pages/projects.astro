@@ -1,15 +1,42 @@
 ---
-import '../styles/global.scss';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Card from '../components/Card.astro';
+import "../styles/global.scss";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
 const title = "Projects";
 ---
-<BaseLayout title={title} descriptions="All worth to mention projects by or with Pukima">
-    <Card image="/assets/projects/kayano.png" title="Kayano" description="A revolutionary Discord bot that aims to have everything needed at some point. It's currently in early alpha but you can already follow the development as it is open-source.">
-        <a href="https://discord.com/api/oauth2/authorize?client_id=878366398269771847&permissions=1100317322295&scope=applications.commands%20bot" target="_blank" rel="norefferer" class="a-button">Invite</a>
-        <a href="https://github.com/kayano-bot/kayano" target="_blank" rel="norefferer" class="a_nother-button">Github</a>
-    </Card>
-    <Card image="/assets/projects/phoenix.png" title="Phoenix" description="Phoenix is a color palette I created. Since I am not actively working on it there is just a Discord Theme for now. You can install a Discord Client Mod (BetterDiscord, Powercord, GooseMod etc.) and then you are able to install this theme too.">
-        <a href="https://github.com/PhoenixColors/phoenix-discord" target="_blank" rel="noreffer" class="a-button">Github</a>
-    </Card>
+
+<BaseLayout
+  {title}
+  descriptions="All worth to mention projects by or with Pukima"
+>
+  <Card
+    image="/assets/projects/kayano.png"
+    title="Kayano"
+    description="A revolutionary Discord bot that aims to have everything needed at some point. It's currently in early alpha but you can already follow the development as it is open-source."
+  >
+    <a
+      href="https://discord.com/api/oauth2/authorize?client_id=878366398269771847&permissions=1100317322295&scope=applications.commands%20bot"
+      target="_blank"
+      rel="norefferer"
+      class="a-button">Invite</a
+    >
+    <a
+      href="https://github.com/kayano-bot/kayano"
+      target="_blank"
+      rel="norefferer"
+      class="a_nother-button">Github</a
+    >
+  </Card>
+  <Card
+    image="/assets/projects/phoenix.png"
+    title="Phoenix"
+    description="Phoenix is a color palette I created. Since I am not actively working on it there is just a Discord Theme for now. You can install a Discord Client Mod (BetterDiscord, Powercord, GooseMod etc.) and then you are able to install this theme too."
+  >
+    <a
+      href="https://github.com/PhoenixColors/phoenix-discord"
+      target="_blank"
+      rel="noreffer"
+      class="a-button">Github</a
+    >
+  </Card>
 </BaseLayout>

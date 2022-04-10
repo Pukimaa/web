@@ -1,53 +1,56 @@
 ---
-import Icon from 'astro-icon';
+import Icon from "astro-icon";
 const currentSite = Astro.canonicalURL.pathname;
 ---
-<style>
-	img {
-		height: 50px;
-		width: auto;
-		float: left;
-		padding: 12px;
-	}
-
-	div {
-		overflow: hidden;
-		z-index: 100;
-	}
-
-	div a {
-		float: left;
-		display: block;
-		color: #f2f2f2;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-size: 1rem;
-		margin-top: .75rem;
-	}
-
-	/* Change the color of links on hover */
-	div a:hover {
-		background-color: #ddd;
-		color: black;
-		border-radius: 3px;
-	}
-
-	/* Add an active class to highlight the current page */
-	div a.active {
-		text-decoration: underline;
-	}
-
-	@media screen and (max-width: 400px) {
-		div a {
-			font-size: 1.25rem;
-		}
-	}
-</style>
 
 <div>
-	<img src="/assets/logo.svg" />
-	<a href="/" class={(currentSite == '/') ? "active" : ""}>Home</a>
-	<a href="/projects" class={(currentSite == '/projects/') ? "active" : ""}>Projects</a>
-	<a href="/blog" class={(currentSite == '/blog/') ? "active" : ""}>Blog</a>
+  <img src="/assets/logo.svg" />
+  <a href="/" class={currentSite == "/" ? "active" : ""}>Home</a>
+  <a href="/projects" class={currentSite == "/projects/" ? "active" : ""}
+    >Projects</a
+  >
+  <a href="/blog" class={currentSite == "/blog/" ? "active" : ""}>Blog</a>
 </div>
+
+<style>
+  img {
+    height: 50px;
+    width: auto;
+    float: left;
+    padding: 12px;
+  }
+
+  div {
+    overflow: hidden;
+    z-index: 100;
+  }
+
+  div a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 0.75rem;
+  }
+
+  /* Change the color of links on hover */
+  div a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 3px;
+  }
+
+  /* Add an active class to highlight the current page */
+  div a.active {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 400px) {
+    div a {
+      font-size: 1.25rem;
+    }
+  }
+</style>

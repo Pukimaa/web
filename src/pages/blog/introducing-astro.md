@@ -1,10 +1,11 @@
 ---
-title: 'Introducing Astro'
-description: 'I lately discovered Astro. I will tell you my experience here!'
-date: '2022-04-09'
-image: '/assets/blog/introducing-astro.jpg'
-layout: '../../layouts/MarkdownPost.astro'
+title: "Introducing Astro"
+description: "I lately discovered Astro. I will tell you my experience here!"
+date: "2022-04-09"
+image: "/assets/blog/introducing-astro.jpg"
+layout: "../../layouts/MarkdownPost.astro"
 ---
+
 I first discovered Astro when a friend of mine was making [the Lunar Website](https://lunar-theme.github.io) and it was created in Astro. So I checked out the [Astro Website](https://astro.build) and it looked like a cool solution for web development.
 After a few months (last week in the time of writing this) I decided I want a new website because I didn't really liked the old one.
 Then I remembered Astro from earlier and looked at it again. A lot has change since the last time I was looking at it and literally 1 day after looking at it again, the Beta Release was released (Astro v1.0.0-beta).
@@ -17,4 +18,4 @@ I decided to use Markdown for the Blog Posts and automatically fetch them etc. T
 
 Yeah that's how my new website was created. I hope you liked this post!
 
-*Part of the [#100DaysToOffload Challenge](/blog/100DaysToOffload)*
+_Part of the [#100DaysToOffload Challenge](/blog/100DaysToOffload)_

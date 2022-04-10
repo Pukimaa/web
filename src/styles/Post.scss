@@ -1,18 +1,18 @@
-@import '_variables.scss';
+@import "_variables.scss";
 
 img {
-    width: auto;
-    width: 1000px;
-    max-width: 95%;
-    border-radius: $border-radius;
+  width: auto;
+  width: 1000px;
+  max-width: 95%;
+  border-radius: $border-radius;
 }
 
 h1 {
-    margin: 1rem auto 0.5rem auto;
+  margin: 1rem auto 0.5rem auto;
 }
 
 .date {
-    color: #dadada;
-    font-size: 1rem;
-    margin: 0 auto 0 auto;
+  color: #dadada;
+  font-size: 1rem;
+  margin: 0 auto 0 auto;
 }
