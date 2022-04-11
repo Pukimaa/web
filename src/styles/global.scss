@@ -1,5 +1,5 @@
-@use "_variables" as v;
 @use "fonts";
+@import "_variables";
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -7,12 +7,12 @@
 }
 
 ::-webkit-scrollbar-track-piece {
-  background-color: v.$background;
+  background-color: $background;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
   height: 30px;
-  background-color: v.$sec-background;
+  background-color: $sec-background;
 }
 
 html {
@@ -22,14 +22,14 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: v.$background;
+  background-color: $background;
   text-align: center;
 }
 
 p,
 a {
   font-family: "Nunito", sans-serif;
-  color: v.$foreground;
+  color: $foreground;
   font-size: 1.25rem;
   max-width: 75%;
   margin-left: auto;
@@ -50,13 +50,13 @@ h6 {
   font-family: "Pukima's Handwriting 2022";
   font-weight: 600;
   font-size: 2.25rem;
-  color: v.$foreground-light;
+  color: $foreground-light;
 }
 
 code {
   position: relative;
   font-size: 1rem;
-  background-color: v.$sec-background;
+  background-color: $sec-background;
   padding: 3px;
   border-radius: 3px;
   bottom: 0.25rem;
@@ -68,30 +68,34 @@ code {
   }
 }
 
+.turbolinks-progress-bar {
+  background-color: $accent;
+}
+
 .a-button {
   padding: 0.75rem;
-  color: v.$background;
+  color: $background;
   text-decoration: none;
-  background-color: v.$accent;
-  border-radius: v.$border-radius;
+  background-color: $accent;
+  border-radius: $border-radius;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    color: v.$background;
-    background-color: v.$light-accent;
+    color: $background;
+    background-color: $light-accent;
   }
 }
 
 .a_nother-button {
   padding: 0.75rem;
-  color: v.$background;
+  color: $background;
   text-decoration: none;
   background-color: #dadada;
-  border-radius: v.$border-radius;
+  border-radius: $border-radius;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    color: v.$background;
+    color: $background;
     background-color: #eee;
   }
 }

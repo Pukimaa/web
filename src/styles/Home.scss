@@ -1,4 +1,4 @@
-@use "_variables" as v;
+@import "_variables";
 $social-color: #0e132c;
 $tiktok: #b19cd9;
 $twitter: #97d5ff;
@@ -31,8 +31,8 @@ $discord: #a7b9ff;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: v.$sec-background;
-  border-radius: v.$border-radius;
+  background-color: $sec-background;
+  border-radius: $border-radius;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 25%);
   z-index: 1;
   animation: flip-in-ver-left 2s ease 0s 1 normal none;
@@ -49,7 +49,7 @@ $discord: #a7b9ff;
   & > p {
     font-size: 1.5rem;
     margin: 0 auto 1rem auto;
-    padding: 0 v.$spacing 0 v.$spacing;
+    padding: 0 $spacing 0 $spacing;
   }
 
   .home-links {
@@ -59,7 +59,7 @@ $discord: #a7b9ff;
 
     & > .social {
       color: $social-color;
-      border-radius: v.$border-radius;
+      border-radius: $border-radius;
       height: 50px;
       width: 50px;
       margin: 0 4px 0 4px;
