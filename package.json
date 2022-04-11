@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@astrojs/react": "^0.1.0",
+    "@astrojs/sitemap": "^0.1.0",
     "astro": "^1.0.0-beta.5",
     "prettier-plugin-astro": "^0.0.12",
     "react": "^17.0.2 || ^18.0.0",
