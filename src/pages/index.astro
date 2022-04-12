@@ -3,11 +3,11 @@
 import "../styles/global.scss";
 import "../styles/Home.scss";
 import { Icon } from "astro-icon";
+import { HelloAstro } from "hello-astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ParallaxEffect from "../components/Parallax.astro";
 let title = "Home";
-let description =
-  "The personal website of Pukima, a software developer and photographer based in Kiel, Northern Germany. Here you can find everything about him.";
+let description = "The personal website of Pukima, a software developer and photographer based in Kiel, Northern Germany. Here you can find everything about him.";
 ---
 
 <BaseLayout {title} {description}>
@@ -15,7 +15,7 @@ let description =
     <div class="home-card">
       <h1 class="fade-in" style="font-size: 3.5rem">Pukima</h1>
       <p class="fade-in">
-        Heya! I am Pukima (also called Jaron irl) and I am a developer and
+        <HelloAstro /><Icon name="twemoji:waving-hand" class="emoji" /> I am Pukima (also called Jaron irl) and I am a developer and
         photographer based in Northern Germany.
       </p>
       <div class="home-links fade-in">

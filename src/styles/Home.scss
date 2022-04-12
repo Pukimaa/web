@@ -50,6 +50,10 @@ $discord: #a7b9ff;
     font-size: 1.5rem;
     margin: 0 auto 1rem auto;
     padding: 0 $spacing 0 $spacing;
+
+    & > span#greetingWrapper {
+      margin-right: -0.35rem;
+    }
   }
 
   .home-links {
