@@ -2,7 +2,6 @@
 import "../styles/global.scss";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
-import CardWrapper from "../components/CardWrapper.astro";
 const title = "Projects";
 ---
 
@@ -10,7 +9,6 @@ const title = "Projects";
   {title}
   descriptions="All worth to mention projects by or with Pukima"
 >
-  <CardWrapper>
     <Card
       image="/assets/projects/kayano.png"
       title="Kayano"
@@ -41,5 +39,4 @@ const title = "Projects";
         class="a-button">Github</a
       >
     </Card>
-  </CardWrapper>
 </BaseLayout>

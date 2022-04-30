@@ -18,4 +18,4 @@ I decided to use Markdown for the Blog Posts and automatically fetch them etc. T
 
 Yeah that's how my new website was created. I hope you liked this post!
 
-_Part of the [#100DaysToOffload Challenge](/blog/100DaysToOffload)_
+_Part of the [#100DaysToOffload Challenge](./100DaysToOffload)_

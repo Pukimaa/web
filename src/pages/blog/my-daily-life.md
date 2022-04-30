@@ -12,5 +12,5 @@ It's 2PM. I eat lunch (Mondays is noodle day) and when I am done I go in my bedr
 
 I eat dinner at 6PM and at 9PM I make myself ready for bed, read a book and at 10PM I mostly fall a sleep.
 
-That's basically a normal day in my life as a part of the [#100DaysToOffload](/blog/100DaysToOffload) Challenge.
+That's basically a normal day in my life as a part of the [#100DaysToOffload](./100DaysToOffload) Challenge.
 Thanks for reading and have a great day!

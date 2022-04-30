@@ -6,12 +6,10 @@
   margin: 2rem auto 2rem auto;
   justify-content: center;
   flex-direction: column;
-  transition: opacity 1s;
   align-items: center;
   max-width: 95%;
   display: flex;
   width: 750px;
-  opacity: 0;
 
   & > h1 {
     margin: 1rem auto 1rem auto;
@@ -35,10 +33,6 @@
   & > a:last-child {
     margin-bottom: 2rem;
   }
-}
-
-.fade-in {
-  opacity: 1;
 }
 
 .post {
