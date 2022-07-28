@@ -3,7 +3,10 @@ import Nav from "../components/Nav.astro";
 import "../styles/global.scss";
 import "../styles/Post.scss";
 
+import { repository } from "../../package.json";
+import { Icon } from "astro-icon";
 import { SEO } from "astro-seo";
+import { Spa } from "astro-spa";
 import { Plausible } from "astro-analytics";
 const { content } = Astro.props;
 ---
@@ -24,18 +27,23 @@ const { content } = Astro.props;
         ],
       }}
     />
-    <script
-      defer
-      data-domain="pukima.site"
-      src="https://stats.pukima.site/js/plausible.js"></script>
+    <Plausible
+      domain="pukima.site"
+      src="https://stats.pukima.site/js/plausible.js"
+    />
+    <Spa defaultAnimation={false} />
   </head>
   <body>
     <Nav />
     <main>
-      <img src={content.image} />
+      <img src={content.banner} />
       <h1>{content.title}</h1>
       <p class="date">Written on {content.date}</p>
-      <slot />
+      <slot /><br /><br />
+      <div class="post-footer">
+        <a href={repository + "/blob/master/src/pages/blog/" + content.file.split('/').pop()}><i class="emoji" ><Icon name="fa:pencil" /></i> Edit this page</a>
+      </div>
+      <br /><br />
     </main>
   </body>
 </html>

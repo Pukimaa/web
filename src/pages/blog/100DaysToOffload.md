@@ -2,7 +2,7 @@
 title: "#100DaysToOffload"
 description: "This is the start of a journey."
 date: "2022-03-06"
-image: "/assets/blog/100DaysToOffload.webp"
+banner: "/assets/blog/100DaysToOffload.webp"
 layout: "../../layouts/MarkdownPost.astro"
 ---
 

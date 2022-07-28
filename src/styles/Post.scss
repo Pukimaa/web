@@ -11,8 +11,10 @@ h1 {
   margin: 1rem auto 0.5rem auto;
 }
 
-.date {
-  color: #dadada;
-  font-size: 1rem;
-  margin: 0 auto 0 auto;
+.date, .post-footer {
+  &, & > a {
+    color: #dadada !important;
+    font-size: 1rem !important;
+  }
 }
+

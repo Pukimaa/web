@@ -2,8 +2,9 @@
 title: "Twitter is dying — Finally"
 description: "Elon Musk bought Twitter and now there's a new platform everybody switchs to"
 date: "2022-04-30"
-image: "/assets/blog/twitter-is-dying.jpg"
+banner: "/assets/blog/twitter-is-dying.jpg"
 layout: "../../layouts/MarkdownPost.astro"
+tags: ["news", "tech"]
 ---
 So on Monday Twitter accepted Elon Musk's Offer to buy Twitter fro $54,20 per share. That's a total of 44 Billion US Dollars! After that was announced #Mastodon was trending on Twitter. In case you don't know, Mastodon is an open-source and decentralized social Network like Twitter but with way more features, everyone can create their own version and because of that it is very privacy-friendly. You can find out more over at [joinmastodon.org](https://joinmastodon.org).
 

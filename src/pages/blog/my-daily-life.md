@@ -2,7 +2,7 @@
 title: "A normal day in my life"
 description: "In this post I will tell you how a normal day in my life looks like."
 date: "2022-03-14"
-image: "/assets/blog/a-normal-day-in-my-life.jpg"
+banner: "/assets/blog/a-normal-day-in-my-life.jpg"
 layout: "../../layouts/MarkdownPost.astro"
 ---
 

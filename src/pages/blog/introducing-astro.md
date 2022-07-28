@@ -2,8 +2,9 @@
 title: "Introducing Astro"
 description: "I lately discovered Astro. I will tell you my experience here!"
 date: "2022-04-09"
-image: "/assets/blog/introducing-astro.jpg"
+banner: "/assets/blog/introducing-astro.jpg"
 layout: "../../layouts/MarkdownPost.astro"
+tags: ["tech"]
 ---
 
 I first discovered Astro when a friend of mine was making [the Lunar Website](https://lunar-theme.github.io) and it was created in Astro. So I checked out the [Astro Website](https://astro.build) and it looked like a cool solution for web development.

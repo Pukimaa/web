@@ -36,6 +36,8 @@
 }
 
 .post {
+  text-decoration: none;
+
   h3 {
     margin: 1rem 0 0 0;
     font-size: 2rem;
@@ -43,12 +45,12 @@
   .date {
     font-size: 1rem;
     color: #bbb;
-  }
-  p {
     margin-bottom: 0;
   }
-  a {
-    margin-top: 1rem;
+
+  &:hover {
+    transform: scale(1.025);
+    background-color: $sec-alt-background;
   }
 }
 

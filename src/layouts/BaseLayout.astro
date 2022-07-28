@@ -3,6 +3,7 @@ import Nav from "../components/Nav.astro";
 import "../styles/global.scss";
 
 import { SEO } from "astro-seo";
+import { Spa } from "astro-spa";
 import { Plausible } from "astro-analytics";
 const { title, description } = Astro.props;
 ---
@@ -22,6 +23,7 @@ const { title, description } = Astro.props;
       domain="pukima.site"
       src="https://stats.pukima.site/js/plausible.js"
     />
+    <Spa defaultAnimation={false} />
   </head>
   <body>
     <Nav />

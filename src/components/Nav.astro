@@ -1,5 +1,4 @@
 ---
-import Icon from "astro-icon";
 const currentSite = Astro.canonicalURL.pathname;
 ---
 
@@ -9,10 +8,10 @@ const currentSite = Astro.canonicalURL.pathname;
   <a href="/projects" class={currentSite == "/projects/" ? "active" : ""}
     >Projects</a
   >
-  <a href="/blog" class={currentSite == "/blog/" ? "active" : ""}>Blog</a>
+  <a href="/blog" class={currentSite.startsWith("/blog/") ? "active" : ""}>Blog</a>
 </div>
 
-<style>
+<style lang="scss">
   img {
     height: 50px;
     width: auto;
@@ -34,6 +33,9 @@ const currentSite = Astro.canonicalURL.pathname;
     text-decoration: none;
     font-size: 1rem;
     margin-top: 0.75rem;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
   }
 
   /* Change the color of links on hover */
