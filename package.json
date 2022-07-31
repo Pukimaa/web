@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@astrojs/react": "^0.4.2",
-    "@astrojs/sitemap": "^0.1.0",
+    "@astrojs/sitemap": "^0.3.0",
     "@swup/a11y-plugin": "^2.0.0",
     "@swup/head-plugin": "^1.2.0",
     "astro": "^1.0.0-rc.3",
