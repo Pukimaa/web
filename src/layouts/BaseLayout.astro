@@ -1,34 +1,17 @@
 ---
+import Head from "../components/Head.astro";
 import Nav from "../components/Nav.astro";
 import "../styles/global.scss";
 
-import { SEO } from "astro-seo";
-import { Spa } from "astro-spa";
-import { Plausible } from "astro-analytics";
 const { title, description } = Astro.props;
 ---
-
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <SEO
-      title={title + " - Pukima's Personal Website"}
-      {description}
-      extend={{
-        link: [{ rel: "icon", href: "/favicon.ico" }],
-      }}
-    />
-    <Plausible
-      domain="pukima.site"
-      src="https://stats.pukima.site/js/plausible.js"
-    />
-    <Spa defaultAnimation={false} />
-  </head>
+  <Head title={title} description={description} />
   <body>
     <Nav />
-    <main>
+    <main id="swup" class="transition-fade">
       <slot />
     </main>
+    <script type="module" src="/swup.js"></script>
   </body>
 </html>

@@ -1,0 +1,21 @@
+---
+import { SEO } from "astro-seo";
+import { Plausible } from "astro-analytics";
+
+const { title, description } = Astro.props;
+---
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <SEO
+      title={title + " - Pukima's Personal Website"}
+      {description}
+      extend={{
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+      }}
+    />
+    <Plausible
+      domain="pukima.site"
+      src="https://stats.pukima.site/js/plausible.js"
+    />
+</head>

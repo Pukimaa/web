@@ -1,42 +1,14 @@
 ---
-import Nav from "../components/Nav.astro";
-import "../styles/global.scss";
-import "../styles/Post.scss";
-
 import { repository } from "../../package.json";
 import { Icon } from "astro-icon";
-import { SEO } from "astro-seo";
-import { Spa } from "astro-spa";
-import { Plausible } from "astro-analytics";
+import "../styles/global.scss";
+import "../styles/Post.scss";
+import BaseLayout from "./BaseLayout.astro";
+
 const { content } = Astro.props;
 ---
-
-<html dir="ltr" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <SEO
-      title={content.title + " - Pukima's Blog"}
-      description={content.description}
-      extend={{
-        link: [{ rel: "icon", href: "/favicon.ico" }],
-        meta: [
-          { name: "twitter:image", content: content.image },
-          { name: "twitter:title", content: content.title },
-          { name: "twitter:description", content: content.description },
-        ],
-      }}
-    />
-    <Plausible
-      domain="pukima.site"
-      src="https://stats.pukima.site/js/plausible.js"
-    />
-    <Spa defaultAnimation={false} />
-  </head>
-  <body>
-    <Nav />
-    <main>
-      <img src={content.banner} />
+<BaseLayout title={content.title} descriptions={content.description}>
+      <img src={content.banner} class="wide-post-banner" />
       <h1>{content.title}</h1>
       <p class="date">Written on {content.date}</p>
       <slot /><br /><br />
@@ -44,6 +16,4 @@ const { content } = Astro.props;
         <a href={repository + "/blob/master/src/pages/blog/" + content.file.split('/').pop()}><i class="emoji" ><Icon name="fa:pencil" /></i> Edit this page</a>
       </div>
       <br /><br />
-    </main>
-  </body>
-</html>
+</BaseLayout>

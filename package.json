@@ -19,7 +19,9 @@
   "devDependencies": {
     "@astrojs/react": "^0.4.2",
     "@astrojs/sitemap": "^0.1.0",
-    "astro": "^1.0.0-beta.73",
+    "@swup/a11y-plugin": "^2.0.0",
+    "@swup/head-plugin": "^1.2.0",
+    "astro": "^1.0.0-rc.3",
     "astro-analytics": "^2.1.1",
     "astro-icon": "^0.7.3",
     "astro-seo": "^0.5.0",
@@ -31,6 +33,7 @@
     "prettier-plugin-astro": "^0.1.2",
     "react": "^17.0.2 || ^18.0.0",
     "react-dom": "^17.0.2 || ^18.0.0",
-    "sass": "^1.54.0"
+    "sass": "^1.54.0",
+    "swup": "^2.0.16"
   }
 }
