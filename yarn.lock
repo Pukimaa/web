@@ -3603,10 +3603,10 @@ svgo@^2.8.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-swup@^2.0.16:
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/swup/-/swup-2.0.16.tgz#8073c58dae9d8fe49d97042b35db1964cbd4075a"
-  integrity sha512-ozh3DuDDa6l7ctZcQ36DNROPo5CyTHMj7ob31kUkCrCGX8SimdqB0uK7PZnlEl4x3lmY12+eIdHji11q8SA6Aw==
+swup@^2.0.17:
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/swup/-/swup-2.0.17.tgz#e0d1ef53c76269241296194e44eeb73f5e037f87"
+  integrity sha512-CJ5olwQ7qDYNDBNaFv1us4M8BwI2HCqmZTWmSUb+HIUq3PnttdYPogQZnQbpFjqNS0/qOq1QOLK0wjMDlggPJQ==
   dependencies:
     delegate-it "^3.0.1"
     opencollective-postinstall "^2.0.2"
