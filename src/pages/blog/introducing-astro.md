@@ -2,8 +2,8 @@
 title: "Introducing Astro"
 description: "I lately discovered Astro. I will tell you my experience here!"
 date: "2022-04-09"
-banner: "/assets/blog/introducing-astro.jpg"
 layout: "../../layouts/MarkdownPost.astro"
+banner: "/assets/blog/introducing-astro.jpg"
 tags: ["tech"]
 ---
 

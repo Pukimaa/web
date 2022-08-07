@@ -1,0 +1,5 @@
+# Hello, little robots o/
+User-agent: *
+Allow: /
+
+Sitemap: https://pukima.site/sitemap-index.xml

@@ -3,7 +3,7 @@ const currentSite = Astro.url.pathname;
 ---
 
 <div>
-  <img src="/assets/logo.png" />
+  <img src="/assets/logo.png" height={50} width={50} alt="Logo" />
   <a href="/" class={currentSite == "/" ? "active" : ""}>Home</a>
   <a href="/projects" class={currentSite == "/projects" ? "active" : ""}
     >Projects</a
@@ -13,10 +13,9 @@ const currentSite = Astro.url.pathname;
 
 <style lang="scss">
   img {
-    height: 50px;
-    width: auto;
     float: left;
     padding: 12px;
+    background-color: transparent;
   }
 
   div {

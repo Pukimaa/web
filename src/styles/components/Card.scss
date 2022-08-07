@@ -38,19 +38,33 @@
 .post {
   text-decoration: none;
 
-  h3 {
-    margin: 1rem 0 0 0;
+  h2 {
+    margin: 1rem 0 .75rem 0;
     font-size: 2rem;
-  }
-  .date {
-    font-size: 1rem;
-    color: #bbb;
-    margin-bottom: 0;
   }
 
   &:hover {
     transform: scale(1.025);
     background-color: $sec-alt-background;
+
+    .emoji > svg {
+      transform: scale(1);
+    }
+  }
+
+  .small {
+    width: 100%;
+  
+    & > p {
+      .emoji > svg {
+        height: 1rem;
+      }
+  
+      white-space: nowrap;
+      color: #dadada !important;
+      font-size: 1rem !important;
+      margin: 0 auto 0 auto;
+    }
   }
 }
 

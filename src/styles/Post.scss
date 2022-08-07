@@ -11,6 +11,21 @@ h1 {
   margin: 1rem auto 0.5rem auto;
 }
 
+.small {
+  width: 100%;
+
+  & > p {
+    .emoji > svg {
+      height: 1rem;
+    }
+
+    white-space: nowrap;
+    color: #dadada !important;
+    font-size: 1rem !important;
+    margin-bottom: 1.25rem;
+  }
+}
+
 .date, .post-footer {
   &, & > a {
     color: #dadada !important;
