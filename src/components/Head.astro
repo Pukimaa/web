@@ -32,9 +32,7 @@ const { title, description } = Astro.props;
   <SEO
     title={title + " - Pukima's Personal Website"}
     {description}
-    extend={{
-      link: [{ rel: "icon", href: "/favicon.ico" }],
-    }}
+    extend={{ link: [{ rel: "icon", href: "/favicon.ico" }] }}
   />
   <Plausible
     domain="pukima.site"
