@@ -26,10 +26,11 @@ h1 {
   }
 }
 
-.date, .post-footer {
-  &, & > a {
+.date,
+.post-footer {
+  &,
+  & > a {
     color: #dadada !important;
     font-size: 1rem !important;
   }
 }
-

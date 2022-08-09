@@ -7,15 +7,33 @@ import BaseLayout from "./BaseLayout.astro";
 
 const { content } = Astro.props;
 ---
+
 <BaseLayout title={content.title} description={content.description}>
-      <img src={content.banner} class="wide-post-banner" alt={"Cover for: " + content.title} width="1000" height="auto" />
-      <h1>{content.title}</h1>
-      <div class="small">
-        <p><i class="emoji"><Icon name="fa-solid:clock" /></i> {Math.round(content.readingTime) === 1 ? Math.round(content.readingTime) : 1} min <i class="emoji"><Icon name="fa-solid:calendar" /></i> {new Date(content.date).toISOString().slice(0, 10)}</p>
-      </div>
-      <slot /><br /><br />
-      <div class="post-footer">
-        <a href={repository + "/blob/master/src/pages/blog/" + content.file.split('/').pop()}><i class="emoji" ><Icon name="fa:pencil" /></i> Edit this page</a>
-      </div>
-      <br /><br />
+  <img
+    src={content.banner}
+    class="wide-post-banner"
+    alt={"Cover for: " + content.title}
+    width="1000"
+    height="auto"
+  />
+  <h1>{content.title}</h1>
+  <div class="small">
+    <p>
+      <i class="emoji"><Icon name="fa-solid:clock" /></i>
+      {Math.round(content.readingTime) === 1
+        ? Math.round(content.readingTime)
+        : 1} min <i class="emoji"><Icon name="fa-solid:calendar" /></i>
+      {new Date(content.date).toISOString().slice(0, 10)}
+    </p>
+  </div>
+  <slot /><br /><br />
+  <div class="post-footer">
+    <a
+      href={repository +
+        "/blob/master/src/pages/blog/" +
+        content.file.split("/").pop()}
+      ><i class="emoji"><Icon name="fa:pencil" /></i> Edit this page
+    </a>
+  </div>
+  <br /><br />
 </BaseLayout>

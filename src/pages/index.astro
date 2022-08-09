@@ -6,7 +6,8 @@ import { HelloAstro } from "hello-astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const title = "Home";
-const description = "The personal website of Pukima, a software developer and photographer based in Kiel, Northern Germany. Here you can find everything about him.";
+const description =
+  "The personal website of Pukima, a software developer and photographer based in Kiel, Northern Germany. Here you can find everything about him.";
 ---
 
 <BaseLayout {title} {description}>
@@ -14,34 +15,43 @@ const description = "The personal website of Pukima, a software developer and ph
     <div class="home-card">
       <h1 class="fade-in" style="font-size: 3.5rem">Pukima</h1>
       <p class="fade-in">
-        <HelloAstro /><i class="emoji"><Icon name="twemoji:waving-hand" /></i> I am Pukima (also called Jaron irl) and I am a developer and
-        photographer based in Northern Germany.
+        <HelloAstro /><i class="emoji"><Icon name="twemoji:waving-hand" /></i> I
+        am Pukima (also called Jaron irl) and I am a developer and photographer based
+        in Northern Germany.
       </p>
       <div class="home-links fade-in">
         <a
           href="https://tiktok.com/@punkima"
           target="_blank"
           rel="norefferer"
-          class="social tiktok" aria-label="TikTok"><Icon name="fa-brands:tiktok" /></a
-        >
+          class="social tiktok"
+          aria-label="TikTok"
+          ><Icon name="fa-brands:tiktok" />
+        </a>
         <a
           href="https://twitter.com/pukimaaa"
           target="_blank"
           rel="norefferer"
-          class="social twitter" aria-label="Twitter"><Icon name="fa-brands:twitter" /></a
-        >
+          class="social twitter"
+          aria-label="Twitter"
+          ><Icon name="fa-brands:twitter" />
+        </a>
         <a
           href="https://github.com/Pukimaa"
           target="_blank"
           rel="norefferer"
-          class="social github" aria-label="Github"><Icon name="fa-brands:github-alt" /></a
-        >
+          class="social github"
+          aria-label="Github"
+          ><Icon name="fa-brands:github-alt" />
+        </a>
         <a
           href="https://discord.gg/ngkUdXQZ8P"
           target="_blank"
           rel="norefferer"
-          class="social discord" aria-label="Discord"><Icon name="fa-brands:discord" /></a
-        >
+          class="social discord"
+          aria-label="Discord"
+          ><Icon name="fa-brands:discord" />
+        </a>
       </div>
     </div>
   </div>

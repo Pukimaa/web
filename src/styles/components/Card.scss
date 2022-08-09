@@ -39,7 +39,7 @@
   text-decoration: none;
 
   h2 {
-    margin: 1rem 0 .75rem 0;
+    margin: 1rem 0 0.75rem 0;
     font-size: 2rem;
   }
 
@@ -54,12 +54,12 @@
 
   .small {
     width: 100%;
-  
+
     & > p {
       .emoji > svg {
         height: 1rem;
       }
-  
+
       white-space: nowrap;
       color: #dadada !important;
       font-size: 1rem !important;
