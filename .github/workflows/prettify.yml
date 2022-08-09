@@ -3,7 +3,7 @@ name: Prettify
 on: [push, pull_request]
 
 jobs:
-  lint:
+  prettify:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
