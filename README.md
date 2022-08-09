@@ -12,7 +12,6 @@ All commands are run from the root of the project, from a terminal:
 | `yarn run dev`     | Starts local dev server at `localhost:3000`  |
 | `yarn run build`   | Build your production site to `./dist/`      |
 | `yarn run preview` | Preview your build locally, before deploying |
-| `yarn run preview` | Preview your build locally, before deploying |
 | `yarn run format`  | Format the code using Prettier               |
 
 ## ❤️ Credits
