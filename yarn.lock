@@ -85,14 +85,6 @@
   dependencies:
     prismjs "^1.28.0"
 
-"@astrojs/react@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/react/-/react-0.4.2.tgz#19d58d17dd950d717cb63fc95ed71a6165896260"
-  integrity sha512-Odt/O3e8vrkWn46ipwTiQjUP5ql9QzfVe2lZELVfwDNPYSf/AjZWXcSVHtfXIM9bRZ1mj/zaU1eTBAYoy+jOSA==
-  dependencies:
-    "@babel/core" ">=7.0.0-0 <8.0.0"
-    "@babel/plugin-transform-react-jsx" "^7.17.12"
-
 "@astrojs/sitemap@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-0.3.0.tgz#ed730a7d23320ebdd012d200a41acade8c1315df"
@@ -134,7 +126,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.18.8.tgz#2483f565faca607b8535590e84e7de323f27764d"
   integrity sha512-HSmX4WZPPK3FUxYp7g2T6EyO8j96HlZJlxmKPSh6KAcqwyDrfx7hKjXpAW/0FhFfTJsR0Yt4lAjLI2coMptIHQ==
 
-"@babel/core@>=7.0.0-0 <8.0.0", "@babel/core@^7.18.2":
+"@babel/core@^7.18.2":
   version "7.18.9"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.18.9.tgz#805461f967c77ff46c74ca0460ccf4fe933ddd59"
   integrity sha512-1LIb1eL8APMy91/IMW+31ckrfBM4yCoLaVzoDhZUKSM4cu1L1nIidyxkCgzPAgrC5WEz36IPEr/eSeSF9pIn+g==
