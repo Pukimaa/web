@@ -4,8 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: "⬆️"
     labels:
       - "dependencies"
-    reviewers:
-      - "Pukimaa"
     versioning-strategy: auto
