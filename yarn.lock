@@ -10,15 +10,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@astrojs/compiler@^0.19.0":
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.19.0.tgz#ea25fea3ba59ce7734c2bcc65a5fd1e372329943"
-  integrity sha512-8nvyxZTfCXLyRmYfTttpJT6EPhfBRg0/q4J/Jj3/pNPLzp+vs05ZdktsY6QxAREaOMAnNEtSqcrB4S5DsXOfRg==
-
-"@astrojs/compiler@^0.23.1":
-  version "0.23.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.23.1.tgz#acfa7ca3c4e587b269b746bed0e625c9c2e558cb"
-  integrity sha512-KsoDrASGwTKZoWXbjy8SlIeoDv7y1OfBJtHVLuPuzhConA8e0SZpGzFqIuVRfG4bhisSTptZLDQZ7oxwgPv2jA==
+"@astrojs/compiler@^0.23.1", "@astrojs/compiler@^0.23.4":
+  version "0.23.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.23.4.tgz#e22d1436876d0477e62be38063263d2851c57403"
+  integrity sha512-vNZIa5Tf5nOqBEGJvM6xyYBnGcz4MAp+bBPnyVI0UYRjsIWlP7RgMdCpRV0OOh5kgh00BoAypGv27kcoJCMVfA==
 
 "@astrojs/language-server@^0.20.0":
   version "0.20.1"
@@ -2627,14 +2622,14 @@ preferred-pm@^3.0.3:
     path-exists "^4.0.0"
     which-pm "2.0.0"
 
-prettier-plugin-astro@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.4.1.tgz#fa21974259d815e0dabbe3b75bf6297a5b9b810b"
-  integrity sha512-AvYyg4WDnhmqH5S85EFgJAMU20p1lLypVt4sn4tuGW+lnPfWr70SaHZD9gevx20o3FnALgZxDu1enFSkN/MSwQ==
+prettier-plugin-astro@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.5.4.tgz#0ccc510cdd260baf6346ccaf5956fb63d0b2bbd9"
+  integrity sha512-ILs/WgUYtKBOn3Zh217/PwjCFtUWEKQjcCFJDevri0hGEBwEnnda9aqSLL0/nhCOmQn/UE7M9zLQvThu970ZHw==
   dependencies:
-    "@astrojs/compiler" "^0.19.0"
+    "@astrojs/compiler" "^0.23.4"
     prettier "^2.7.1"
-    sass-formatter "^0.7.2"
+    sass-formatter "^0.7.5"
     synckit "^0.7.0"
 
 prettier@^2.7.1:
@@ -2896,7 +2891,7 @@ safe-buffer@~5.2.0:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
-sass-formatter@^0.7.2:
+sass-formatter@^0.7.5:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/sass-formatter/-/sass-formatter-0.7.5.tgz#60fc3756267368d82877c6abf2c148f0c9291d6d"
   integrity sha512-NKFP8ddjhUYi6A/iD1cEtzkEs91U61kzqe3lY9SVNuvX7LGc88xnEN0mmsWL7Ol//YTi2GL/ol7b9XZ2+hgXuA==
