@@ -20,7 +20,7 @@
     "@astrojs/sitemap": "^1.0.0",
     "@swup/a11y-plugin": "^2.0.0",
     "@swup/head-plugin": "^1.2.1",
-    "astro": "^1.0.0",
+    "astro": "^1.4.3",
     "astro-analytics": "^2.2.0",
     "astro-icon": "^0.7.3",
     "astro-seo": "^0.5.1",
