@@ -478,10 +478,10 @@
   dependencies:
     tsm "^2.1.4"
 
-"@swup/a11y-plugin@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@swup/a11y-plugin/-/a11y-plugin-2.0.0.tgz#7875c29d0a876f31802b4f874e71efd7a902e917"
-  integrity sha512-KoomWo0RQ8WwOOXBtJArnB8d7tG2Ph0fPmIyXn6GsCPTdSot6n+zHRSlMtcMKrg2NYwg31HNLq67gA3SbNG9ww==
+"@swup/a11y-plugin@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@swup/a11y-plugin/-/a11y-plugin-2.1.0.tgz#d16e7bd5f766f24d5fa789211364ccc755e08ff1"
+  integrity sha512-cAuwB6zwVzHVuIHXByyvrAPXIBI2rt1JSJnBKI41k8xLAc/7tSJflSirWbZQXqYAu9D2Rn5p/hu9Kobf34buug==
   dependencies:
     "@swup/plugin" "^1.0.1"
     focus-options-polyfill "^1.5.0"
