@@ -721,10 +721,10 @@ ast-types@0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro-analytics@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/astro-analytics/-/astro-analytics-2.5.0.tgz#a6bea3b82a3cf444ffa3bff6b6897836474c7bcb"
-  integrity sha512-osywOVkeoX/Ia2vX1nUVy8PSU+VuvhHysHuE+WkFn1iQ5XismB0E/RjuxJH1JoWObKVasVLjS88nEu8SIEYCmw==
+astro-analytics@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/astro-analytics/-/astro-analytics-2.5.1.tgz#b805256d9a4c2fa451629f28ac40a423bd87c82c"
+  integrity sha512-0n3QlHYt+VINbqs5Ukbzl1NHHpvjO/1LeEdz1umA40mgPbyUjivJJ5wwINrOqxu8swPD+jmUFCm7VHDSGxkNwQ==
 
 astro-icon@^0.8.0:
   version "0.8.0"
