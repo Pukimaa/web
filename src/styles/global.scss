@@ -28,7 +28,8 @@ body {
 
 p,
 a {
-  font-family: "Nunito", sans-serif;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
   color: $foreground;
   font-size: 1.25rem;
   max-width: 75%;
@@ -47,8 +48,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Pukima's Handwriting 2022";
-  font-weight: 600;
+  font-family: "Excon";
+  font-weight: 900;
   font-size: 2.25rem;
   color: $foreground-light;
 }

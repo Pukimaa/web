@@ -3,13 +3,15 @@ const currentSite = Astro.url.pathname;
 ---
 
 <div>
-  <img src="/assets/logo.png" height={50} width={50} alt="Logo" />
-  <a href="/" class={currentSite == "/" ? "active" : ""}>Home</a>
-  <a href="/projects" class={currentSite == "/projects" ? "active" : ""}
-    >Projects
+  <img src="/assets/logo.svg" height={50} width={50} alt="Logo" />
+  <a href="/">
+    Home
   </a>
-  <a href="/blog" class={currentSite.startsWith("/blog") ? "active" : ""}
-    >Blog
+  <a href="/portfolio">
+    Portfolio
+  </a>
+  <a href="/blog">
+    Blog
   </a>
 </div>
 
@@ -33,6 +35,7 @@ const currentSite = Astro.url.pathname;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1rem;
+    border-radius: 3px;
     margin-top: 0.75rem;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
@@ -43,7 +46,6 @@ const currentSite = Astro.url.pathname;
   div a:hover {
     background-color: #ddd;
     color: black;
-    border-radius: 3px;
   }
 
   /* Add an active class to highlight the current page */

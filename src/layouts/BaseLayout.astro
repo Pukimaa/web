@@ -13,6 +13,15 @@ const { title, description } = Astro.props;
     <main id="swup" class="transition-fade">
       <slot />
     </main>
-    <!-- <script type="module" src="/swup.js"></script> -->
+    <script>
+      import Swup from "swup";
+      import SwupA11yPlugin from "@swup/a11y-plugin";
+      import SwupHeadPlugin from "@swup/head-plugin";
+      import SwupOverlayTheme from '@swup/overlay-theme';
+
+      const swup = new Swup({
+        plugins: [new SwupA11yPlugin(), new SwupHeadPlugin(), new SwupOverlayTheme({color:"#1c213b", direction: "to-top"})],
+      });
+    </script>
   </body>
 </html>

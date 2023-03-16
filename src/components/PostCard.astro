@@ -10,7 +10,7 @@ const { url, title, description, date, image, readingTime = "0" } = Astro.props;
   href={url}
   class="card-container post"
   @visible:once={(event) => {
-    event.target.animate({ opacity: [0, 1] }, 1000);
+    event.target.animate({ opacity: [0, 1] }, 750);
   }}
 >
   <img
