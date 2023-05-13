@@ -58,12 +58,14 @@
     & > p {
       .emoji > svg {
         height: 1rem;
+        opacity: 80%;
       }
 
       white-space: nowrap;
       color: #dadada !important;
       font-size: 1rem !important;
-      margin: 0 auto 0 auto;
+      margin: 0 4px 0px auto;
+      display: inline-block;
     }
   }
 }

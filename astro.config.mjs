@@ -4,7 +4,7 @@ import { remarkReadingTime } from "./remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://pukima.site",
+  site: "https://pukima.site/",
   integrations: [sitemap()],
   markdown: {
     remarkPlugins: [remarkReadingTime],

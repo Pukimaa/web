@@ -7,7 +7,7 @@ layout: "../../layouts/MarkdownPost.astro"
 tags: ["news", "tech"]
 ---
 
-So on Monday Twitter accepted Elon Musk's Offer to buy Twitter fro $54,20 per share. That's a total of 44 Billion US Dollars! After that was announced #Mastodon was trending on Twitter. In case you don't know, Mastodon is an open-source and decentralized social Network like Twitter but with way more features, everyone can create their own version and because of that it is very privacy-friendly. You can find out more over at [joinmastodon.org](https://joinmastodon.org).
+So on Monday Twitter accepted Elon Musk's Offer to buy Twitter for $54,20 per share. That's a total of 44 Billion US Dollars! After that was announced #Mastodon was trending on Twitter. In case you don't know, Mastodon is an open-source and decentralized social Network like Twitter but with way more features, everyone can create their own version and because of that it is very privacy-friendly. You can find out more over at [joinmastodon.org](https://joinmastodon.org).
 
 ## Why is Twitter dying now?
 
@@ -16,5 +16,3 @@ Well…not everyone is happy that Elon Musk owns Twitter now because he can do w
 ## Why Mastodon is a great Alternative
 
 There is a missing feature like _the edit button_? Just implement it yourself! That's how it works. The code is open-source and everybody can work at it and host their own version of Mastodon while you can still communicate with others. [glitch-soc](https://github.com/glitch-soc/mastodon) for example is a pretty popular fork which adds cool customization features and more to the platform but you can still communicate with Vanilla Mastodon users for example. You think there isn't a instance that fits you? Just [create your own instance](https://docs.joinmastodon.org/admin/install/) with your own rules!
-
-_Part of the [#100DaysToOffload Challenge](./100DaysToOffload)_

@@ -7,7 +7,7 @@ banner: "/assets/blog/sunsetting-tako.png"
 tags: ["tech"]
 ---
 
-This might seem like a very quick decision I came to over night but it's been keeping me thinking for quite some time now.
+This might seem like a very sudden decision I came to over night but it's been keeping me thinking for quite some time now.
 
 Creating a Discord bot is tough, especially when you do most of the work yourself. While I had great assistance from my Staff, I still did the heavy lifting (no, not in gym). It's been also very hard to maintain due to it's size and the fact that I'm the only one working on it. Bugs are hard to find and fix and new features are hard (sometimes) to implement.
 
@@ -25,6 +25,8 @@ Eventually the bot will be taken down and the Open Collective will be closed, if
 
 I hope you understand my decision and I'm sorry for everyone who was looking forward to the future of Tako.
 Also I am currently thinking about a cool new way to make michu unique and I'm looking forward to it. If you wanna be the first to know how and what then sign up at [michu's website](https://michu.framer.website).
+
+**Searching for an alternative?** Check out [Omni](https://omnibot.io/), it's beta will start soon and I just love the design and the features it has. It's also going to be mostly free but has a cheap pricing model for premium features. I also just joined their team as a Moderator and hope to do more for them soon.
 
 Love you all and thanks for the support!
 

@@ -18,5 +18,3 @@ You can even use Svelte or React (and many more) components and yes even mix the
 I decided to use Markdown for the Blog Posts and automatically fetch them etc. This was pretty easy with Astro and I really love how the Blog Page and the Post Pages turned out.
 
 Yeah that's how my new website was created. I hope you liked this post!
-
-_Part of the [#100DaysToOffload Challenge](./100DaysToOffload)_

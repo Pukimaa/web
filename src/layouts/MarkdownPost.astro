@@ -15,9 +15,9 @@ const { content } = Astro.props;
       <p>
         <i class='emoji'><Icon name='fa-solid:clock' /></i>
         {
-          Math.round(content.readingTime) === 1
-            ? Math.round(content.readingTime)
-            : 1
+          content.readingTime < 1
+            ? 1
+            : Math.round(content.readingTime)
         } min <i class='emoji'><Icon name='fa-solid:calendar' /></i>
         {new Date(content.date).toISOString().slice(0, 10)}
       </p>
