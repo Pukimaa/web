@@ -1,29 +1,23 @@
 @import "_variables.scss";
 
-.wide-post-banner {
-  width: auto;
-  width: 1000px;
-  max-width: 95%;
-  border-radius: $border-radius;
-}
-
 h1 {
   margin: 1rem auto 0.5rem auto;
 }
 
-.small {
-  width: 100%;
+.post-text {
+  text-align: left;
+}
 
-  & > p {
-    .emoji > svg {
-      height: 1rem;
-    }
-
-    white-space: nowrap;
-    color: #dadada !important;
-    font-size: 1rem !important;
-    margin-bottom: 1.25rem;
+.small > p {
+  .emoji > svg {
+    height: 1rem;
   }
+
+  white-space: nowrap;
+  color: #dadada !important;
+  font-size: 1rem !important;
+  margin-bottom: 1.25rem;
+  margin-left: 0;
 }
 
 .date,

@@ -42,6 +42,10 @@ a:hover {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.25rem;
+}
+
 h1,
 h2,
 h3,
@@ -50,7 +54,6 @@ h5,
 h6 {
   font-family: "Excon";
   font-weight: 900;
-  font-size: 2.25rem;
   color: $foreground-light;
 }
 
