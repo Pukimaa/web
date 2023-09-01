@@ -1,9 +1,13 @@
 ---
 import "../styles/global.scss";
 import "../styles/Home.scss";
+
 import { Icon } from "astro-icon";
 import { HelloAstro } from "hello-astro";
+import { Image } from "astro:assets";
+
 import BaseLayout from "../layouts/BaseLayout.astro";
+import KofiImage from "../../public/assets/kofi.svg";
 
 const title = "Home";
 const description =
@@ -54,10 +58,10 @@ const description =
         </a>
       </div>
       <a href='https://ko-fi.com/V7V85DZCG' target='_blank'
-        ><img
-          height='50px'
+        ><Image
+          height='50'
           style='border:0px;margin-top:16px'
-          src='assets/kofi.svg'
+          src={KofiImage}
           alt='Buy Me a Coffee at ko-fi.com'
         /></a
       >
