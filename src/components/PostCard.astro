@@ -1,33 +1,28 @@
 ---
 import "../styles/components/Card.scss";
-import XElement from "astro-xelement";
 import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
 const { url, title, description, date, image, readingTime = "0" } = Astro.props;
 ---
 
-<XElement
-  @is="a"
-  href={url}
-  class="card-container post"
-  @visible:once={(event) => {
-    event.target.animate({ opacity: [0, 1] }, 750);
-  }}
->
-  <img
-    class="post-image"
+<a href={url} class='card-container post'>
+  <Image
+    class='post-image'
     src={image}
-    width="500"
-    height="auto"
+    width='500'
+    height='280'
     alt={"Cover for: " + title}
   />
   <h2>{title}</h2>
-  <div class="small">
+  <div class='small'>
     <p>
-      <i class="emoji"><Icon name="fa-solid:clock" /></i> {readingTime < 1 ? 1 : Math.round(readingTime)} min
+      <i class='emoji'><Icon name='fa-solid:clock' /></i>
+      {readingTime < 1 ? 1 : Math.round(readingTime)} min
     </p>
     <p>
-      <i class="emoji"><Icon name="fa-solid:calendar" /></i> {new Date(date).toISOString().slice(0, 10)}
+      <i class='emoji'><Icon name='fa-solid:calendar' /></i>
+      {new Date(date).toISOString().slice(0, 10)}
     </p>
   </div>
   <p>{description}</p>
-</XElement>
+</a>

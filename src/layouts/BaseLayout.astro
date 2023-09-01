@@ -6,22 +6,12 @@ import "../styles/global.scss";
 const { title, description } = Astro.props;
 ---
 
-<html dir="ltr" lang="en">
+<html dir='ltr' lang='en'>
   <Head title={title} description={description} />
   <body>
     <Nav />
-    <main id="swup" class="transition-fade">
+    <main>
       <slot />
     </main>
-    <script>
-      import Swup from "swup";
-      import SwupA11yPlugin from "@swup/a11y-plugin";
-      import SwupHeadPlugin from "@swup/head-plugin";
-      import SwupOverlayTheme from '@swup/overlay-theme';
-
-      const swup = new Swup({
-        plugins: [new SwupA11yPlugin(), new SwupHeadPlugin(), new SwupOverlayTheme({color:"#1c213b", direction: "to-top"})],
-      });
-    </script>
   </body>
 </html>

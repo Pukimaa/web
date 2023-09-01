@@ -55,7 +55,7 @@ $discord-text: #1a2348;
     padding: 0 $spacing 0 $spacing;
 
     & > span#greetingWrapper {
-      margin-right: -0.35rem;
+      margin-right: 0.1rem;
     }
   }
 
@@ -106,24 +106,6 @@ $discord-text: #1a2348;
         background-color: $discord;
       }
     }
-  }
-}
-
-.fade-in {
-  animation-name: fade-in;
-  animation-duration: 0.75s;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 

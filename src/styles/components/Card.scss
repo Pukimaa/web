@@ -59,12 +59,13 @@
       .emoji > svg {
         height: 1rem;
         opacity: 80%;
+        margin-right: 0.25rem;
       }
 
       white-space: nowrap;
       color: #dadada !important;
       font-size: 1rem !important;
-      margin: 0 4px 0px auto;
+      margin: 0 6px 0 auto;
       display: inline-block;
     }
   }

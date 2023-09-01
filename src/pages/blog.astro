@@ -7,17 +7,19 @@ allPosts.sort(
 );
 ---
 
-<BaseLayout title="Blog" description="Look at all Blog Posts from Pukima">
+<BaseLayout title='Blog' description='Look at all Blog Posts from Pukima'>
   <h1>Blog</h1>
-  {allPosts.map((post) => (
-    <PostCard
-      url={post.url}
-      title={post.frontmatter.title}
-      tags={post.frontmatter.tags}
-      description={post.frontmatter.description}
-      date={post.frontmatter.date}
-      image={post.frontmatter.banner}
-      readingTime={post.frontmatter.readingTime}
-    />
-  ))}
+  {
+    allPosts.map((post) => (
+      <PostCard
+        url={post.url}
+        title={post.frontmatter.title}
+        tags={post.frontmatter.tags}
+        description={post.frontmatter.description}
+        date={post.frontmatter.date}
+        image={post.frontmatter.banner}
+        readingTime={post.frontmatter.readingTime}
+      />
+    ))
+  }
 </BaseLayout>

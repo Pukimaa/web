@@ -1,7 +1,15 @@
 @import "_variables.scss";
 
-h1 {
-  margin: 1rem auto 0.5rem auto;
+.post-text {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: 75%;
+    margin: auto;
+  }
 }
 
 .post-text {
@@ -12,6 +20,7 @@ h1 {
   .emoji > svg {
     height: 1rem;
     opacity: 80%;
+    margin-right: 0.25rem;
   }
 
   white-space: nowrap;
