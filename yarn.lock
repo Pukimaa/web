@@ -783,10 +783,10 @@ array-iterate@^1.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-1.1.4.tgz#add1522e9dd9749bb41152d08b845bd08d6af8b7"
   integrity sha512-sNRaPGh9nnmdC8Zf+pT3UqP8rnWj5Hf9wiFGsX3wUQ2yVSIhO2ShFwCoceIPpB41QF6i2OEmrHmCo36xronCVA==
 
-astro-analytics@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/astro-analytics/-/astro-analytics-2.6.0.tgz#a0b28c3d6d9e4be8b0a082423242a40cfdbccdab"
-  integrity sha512-H7pnYcHLMLATH2ilKEFqZVQqw4NlEQs72I9VYDrSIGNyjm+Abmqq7RwgxpfCpG5sszo6lGNaKhPlHmftG2M42A==
+astro-analytics@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/astro-analytics/-/astro-analytics-2.7.0.tgz#5d57efc04f1daa707c74ab550be0729bdab3db2c"
+  integrity sha512-/qctBn7LF9DS3ff2YYFrYtCkLLw2fboPDJUgg3HErygGbEBvebW/eGRftZH4ykDJhlCvwTsSEKz/vff7WllyAw==
 
 astro-icon@^0.8.1:
   version "0.8.1"
