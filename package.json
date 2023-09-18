@@ -14,7 +14,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "yarn prettier -w ."
+    "format": "bunx prettier -w ."
   },
   "devDependencies": {
     "@astrojs/sitemap": "^3.0.0",
