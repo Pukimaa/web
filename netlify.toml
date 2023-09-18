@@ -1,6 +1,6 @@
 [build]
 functions = "netlify/functions"
-command = "./scripts/build.sh"
+command = "chmod a+x ./scripts/build.sh && ./scripts/build.sh"
 publish = "dist"
 
 [build.environment]
