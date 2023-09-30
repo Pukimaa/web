@@ -1,0 +1,22 @@
+---
+import "../styles/components/Card.scss";
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+
+const { url, title, description, years, readingTime = "0" } = Astro.props;
+---
+
+<a href={url} class='card-container post'>
+  <h2>{title}</h2>
+  <div class='small'>
+    <p>
+      <i class='emoji'><Icon name='fa-solid:clock' /></i>
+      {readingTime < 1 ? 1 : Math.round(readingTime)} min
+    </p>
+    <p>
+      <i class='emoji'><Icon name='fa-solid:calendar' /></i>
+      {years.join(", ")}
+    </p>
+  </div>
+  <p>{description}</p>
+</a>

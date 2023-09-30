@@ -1,31 +1,34 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Card from "../../components/Card.astro";
+import PortfolioCard from "../../components/PortfolioCard.astro";
 import "../../styles/global.scss";
 
 const title = "Portfolio";
+const doneDesignPosts = await Astro.glob("../../pages/portfolio/design/*.md");
+doneDesignPosts.sort((a, b) => {
+  return (
+    +new Date(b.frontmatter.years[b.frontmatter.years.length() - 1], 0) -
+    +new Date(a.frontmatter.years[a.frontmatter.years.length() - 1], 0)
+  );
+});
+doneDesignPosts.filter((post) => {
+  return post.frontmatter.status === "done";
+});
 ---
 
 <BaseLayout
   title={title}
   description="All worth to mention projects showing off Pukima's skills and expertise."
 >
-  <Card
-    image="/assets/portfolio/tako.png"
-    title="Tako"
-    description="A revolutionary Discord bot that aims to have everything needed. It's 100% free and open-source. However it is discontinued and no longer maintained."
-  >
-    <!-- <a
-      href="/portfolio/tako"
-      class="a-button"
-      >Learn more
-    </a> -->
-    <a
-      href="https://top.gg/bot/878366398269771847"
-      target="_blank"
-      rel="norefferer"
-      class="a-button"
-      >View on top.gg
-    </a>
-  </Card>
+  {
+    doneDesignPosts.map((post) => (
+      <PortfolioCard
+        url={post.url}
+        title={post.frontmatter.title}
+        tools={post.frontmatter.tools}
+        years={post.frontmatter.years}
+        readingTime={post.frontmatter.readingTime}
+      />
+    ))
+  }
 </BaseLayout>
