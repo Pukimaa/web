@@ -16,7 +16,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## ❤️ Credits
 
-Thanks a lot to all the people helping me out in the [Astro Discord Server](https://astro.build/chat)...especially:
-
-- Lostra (for creating the fade in logic for Blog Posts and Project Cards)
-- [RafidMuhymin](https://github.com/RafidMuhymin) (for helping me with a lot of things)
+Thanks a lot to all the people helping me out in the [Astro Discord Server](https://astro.build/chat)!
