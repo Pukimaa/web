@@ -18,38 +18,39 @@ $discord-text: #1a2348;
   .home-card {
     margin-top: 2.5rem;
     width: 95% !important;
-}
-
-.home-card {
-  position: absolute;
-  overflow: auto;
-  width: 35%;
-  height: 500px;
-  max-height: 95vh;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: $sec-background;
-  border-radius: $border-radius;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 25%);
-  z-index: 1;
-
-  & > h1 {
-    margin: 1rem auto 1rem auto;
   }
 
-  & > h1,
-  p {
-    text-align: center;
-  }
+  .home-card {
+    position: absolute;
+    overflow: auto;
+    width: 35%;
+    height: 500px;
+    max-height: 95vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $sec-background;
+    border-radius: $border-radius;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 25%);
+    z-index: 1;
 
-  & > p {
-    font-size: 1.5rem;
-    max-width: 95%;
-    padding: 0 $spacing 0 $spacing;
+    & > h1 {
+      margin: 1rem auto 1rem auto;
+    }
 
-    & > span#greetingWrapper {
-      margin-right: 0.1rem;
+    & > h1,
+    p {
+      text-align: center;
+    }
+
+    & > p {
+      font-size: 1.5rem;
+      max-width: 95%;
+      padding: 0 $spacing 0 $spacing;
+
+      & > span#greetingWrapper {
+        margin-right: 0.1rem;
+      }
     }
   }
 
