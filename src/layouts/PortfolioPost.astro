@@ -1,0 +1,37 @@
+---
+import { repository } from "../../package.json";
+import { Icon } from "astro-icon";
+import "../styles/global.scss";
+import "../styles/Post.scss";
+import BaseLayout from "./BaseLayout.astro";
+
+const { content } = Astro.props;
+---
+
+<BaseLayout title={content.title} description={content.description}>
+  <div style='text-align:left;max-width:75%;margin:auto;'>
+    <h1>{content.title}</h1>
+    <div class='small'>
+      <p>
+        <i class='emoji'><Icon name='fa-solid:clock' /></i>
+        {content.readingTime < 1 ? 1 : Math.round(content.readingTime)} min
+        <i class='emoji'><Icon name='fa-solid:calendar' /></i>
+        {content.years.join(", ")}
+        <i class='emoji'><Icon name='fa-solid:tag' /></i> 
+        {content.tools.join(", ")}
+        <i class='emoji'><Icon name='fa-solid:tag' /></i> 
+        {content.content.join(", ")}
+      </p>
+    </div>
+  </div>
+  <div class='post-text'><slot /></div><br /><br />
+  <div class='post-footer'>
+    <a
+      href={repository +
+        "/edit/master/src/pages/portfolio/" +
+        content.file.split("/").pop()}
+      ><i class='emoji'><Icon name='fa:pencil' /></i> Edit this page
+    </a>
+  </div>
+  <br /><br />
+</BaseLayout>

@@ -4,7 +4,7 @@ import PortfolioCard from "../../components/PortfolioCard.astro";
 import "../../styles/global.scss";
 
 const title = "Portfolio";
-const doneDesignPosts = await Astro.glob("../../pages/portfolio/design/*.md");
+const doneDesignPosts = await Astro.glob("../../pages/portfolio/*.mdx");
 doneDesignPosts.sort((a, b) => {
   return (
     +new Date(b.frontmatter.years[b.frontmatter.years.length() - 1], 0) -

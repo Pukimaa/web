@@ -1,11 +1,12 @@
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
 import { remarkReadingTime } from "./remark-reading-time";
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://pukima.site/",
-  integrations: [sitemap()],
+  integrations: [sitemap(), mdx()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
