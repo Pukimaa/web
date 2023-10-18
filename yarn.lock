@@ -52,10 +52,10 @@
   dependencies:
     prismjs "^1.29.0"
 
-"@astrojs/sitemap@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.0.0.tgz#e5ca8defca80ec9240b889e2d35a029dd3678aec"
-  integrity sha512-qm7npHuUW4q3OOmulqhJ1g69jEQu0Sdc6P8NbOzqIoosj/L+3v4i8dtKBnp6n1UQ4Sx8H8Vdi3Z/On7i9/ZJhw==
+"@astrojs/sitemap@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.0.2.tgz#0000dcb36d659d0abe75b13313d95896082de41e"
+  integrity sha512-ldxCDc0+QHcq2jH4WJFcz5iBc5/SqotEqpT91dhvoLqoRUT5U21rQ6u6qA4FyRVjpd/0Nt1kFjEsRbwoB8IKiQ==
   dependencies:
     sitemap "^7.1.1"
     zod "3.21.1"
@@ -3098,6 +3098,20 @@ sharp@^0.32.5:
   version "0.32.5"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.5.tgz#9ddc78ead6446094f51e50355a2d4ec6e7220cd4"
   integrity sha512-0dap3iysgDkNaPOaOL4X/0akdu0ma62GcdC2NBQ+93eqpePdDdr2/LM0sFdDSMmN7yS+odyZtPsb7tx/cYBKnQ==
+  dependencies:
+    color "^4.2.3"
+    detect-libc "^2.0.2"
+    node-addon-api "^6.1.0"
+    prebuild-install "^7.1.1"
+    semver "^7.5.4"
+    simple-get "^4.0.1"
+    tar-fs "^3.0.4"
+    tunnel-agent "^0.6.0"
+
+sharp@^0.32.6:
+  version "0.32.6"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.6.tgz#6ad30c0b7cd910df65d5f355f774aa4fce45732a"
+  integrity sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==
   dependencies:
     color "^4.2.3"
     detect-libc "^2.0.2"
