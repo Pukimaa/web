@@ -2723,10 +2723,10 @@ preferred-pm@^3.1.2:
     path-exists "^4.0.0"
     which-pm "2.0.0"
 
-prettier-plugin-astro@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.12.0.tgz#4faf0d0fcc7ca005668917109f399a548473a6fd"
-  integrity sha512-8E+9YQR6/5CPZJs8XsfBw579zrwZkc0Wb7x0fRVm/51JC8Iys4lBw4ecV8fHwpbQnzve86TUa4fJ08BJzqfWnA==
+prettier-plugin-astro@^0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.12.2.tgz#e52d62989cbeb0373714f49debf7f35c21070a39"
+  integrity sha512-1OXSEht27zrnX7rCa0bEpLdspeumFW4hnj4+JzPuG5bRlSOAhD0rbXBNZfRD9q0Qbr00EcCcnjd6k6M8q+GfTA==
   dependencies:
     "@astrojs/compiler" "^1.5.5"
     prettier "^3.0.0"
@@ -3098,6 +3098,20 @@ sharp@^0.32.5:
   version "0.32.5"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.5.tgz#9ddc78ead6446094f51e50355a2d4ec6e7220cd4"
   integrity sha512-0dap3iysgDkNaPOaOL4X/0akdu0ma62GcdC2NBQ+93eqpePdDdr2/LM0sFdDSMmN7yS+odyZtPsb7tx/cYBKnQ==
+  dependencies:
+    color "^4.2.3"
+    detect-libc "^2.0.2"
+    node-addon-api "^6.1.0"
+    prebuild-install "^7.1.1"
+    semver "^7.5.4"
+    simple-get "^4.0.1"
+    tar-fs "^3.0.4"
+    tunnel-agent "^0.6.0"
+
+sharp@^0.32.6:
+  version "0.32.6"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.6.tgz#6ad30c0b7cd910df65d5f355f774aa4fce45732a"
+  integrity sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==
   dependencies:
     color "^4.2.3"
     detect-libc "^2.0.2"
