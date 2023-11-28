@@ -798,10 +798,10 @@ astro-xelement@^3.2.0:
   resolved "https://registry.yarnpkg.com/astro-xelement/-/astro-xelement-3.2.0.tgz#03db9a6ffc215331244f1fc7db25b08cadd6f906"
   integrity sha512-uzy2z/Yaoz822qXppXawkomc074g3K0+0iGgqOEdwzlOJrj9ne4+BEVh6HWHo5fjEZHy7UcXk5IDGw+pfVaR2w==
 
-astro@^3.5.5:
-  version "3.5.5"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-3.5.5.tgz#7c1878cbe84da64014ce0aacc6a3fea5b239bf7f"
-  integrity sha512-zJDZhO8XheXzpqkZgBXlP8e3j8psf0A21fh5Bq4HNR6gOmgOnM62Pok3O2ClbGygabfl2Preeun0pBRFn5+y0A==
+astro@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-3.6.2.tgz#dc7f33ed487ba23753ed26742a3269f4e9c994c3"
+  integrity sha512-NV3kyYFs2PHoZIYRgGm67wiNR4TRd76pvC+By3ejr/bU0WlfJu+HWoY1crc0cQobwo3syCWhXVjcKJ2rzRoMsw==
   dependencies:
     "@astrojs/compiler" "^2.3.0"
     "@astrojs/internal-helpers" "0.2.1"
