@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@astrojs/sitemap": "^3.0.0",
-    "astro": "^3.5.5",
+    "astro": "^4.0.4",
     "astro-analytics": "^2.7.0",
     "astro-icon": "^0.8.1",
     "astro-seo": "^0.8.0",
